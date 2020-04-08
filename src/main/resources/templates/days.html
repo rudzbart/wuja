@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>WUJAPP</title>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
+</head>
+<body>
+<div id="wrapper">
+    <div id="countdown">
+        <img src="../static/images/wuja.jpg" th:src="@{/images/wuja.jpg}"/><br/><br/>
+        <span class="text"><b>POZOSTAŁO:</b></span><br/>
+        <span id="days" th:text="${daysToArrival}"></span><br/>
+        <span class="text"> <b>DNI DO POWROTU PRZEMUSIA</b></span>
+    </div>
+</div>
+</body>
+</html>
